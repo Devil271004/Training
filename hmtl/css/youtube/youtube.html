@@ -1,100 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Clone</title>
-  <link rel="stylesheet" href="youtube.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+
+    <link rel="stylesheet" href="youtube.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="left-section">
-      <div class="menu-icon">&#9776;</div>
-      <div class="logo">
-        <span class="play-btn">▶</span> YouTube
-      </div>
+    <!-- Header -->
+    <div class="header">
+
+        <div class="logo">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+
     </div>
-    
-    <div class="middle-section">
-      <input class="search-bar" type="text" placeholder="Search">
-      <button class="search-button">&#128269;</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="side-item">
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-bolt"></i>
+            <p>Shorts</p>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-play"></i>
+            <p>Subscriptions</p>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-book"></i>
+            <p>Library</p>
+        </div>
+
     </div>
-    
-    <div class="right-section">
-      <div class="icon">&#127916;</div>
-      <div class="icon">&#128276;</div>
-      <div class="user-profile"></div>
+
+    <!-- Videos -->
+    <div class="video-section">
+
+        <div class="video-card">
+            <img src="https://picsum.photos/300/180?1" alt="">
+            <h3>HTML Full Course</h3>
+            <p>CodeWithPrince</p>
+            <span>1M views • 2 days ago</span>
+        </div>
+
+        <div class="video-card">
+            <img src="https://picsum.photos/300/180?2" alt="">
+            <h3>CSS Beginner Tutorial</h3>
+            <p>Tech Channel</p>
+            <span>850K views • 5 days ago</span>
+        </div>
+
+        <div class="video-card">
+            <img src="https://picsum.photos/300/180?3" alt="">
+            <h3>JavaScript Crash Course</h3>
+            <p>Learn Coding</p>
+            <span>500K views • 1 week ago</span>
+        </div>
+
+        <div class="video-card">
+            <img src="https://picsum.photos/300/180?4" alt="">
+            <h3>Web Development Roadmap</h3>
+            <p>Developer Hub</p>
+            <span>2M views • 3 days ago</span>
+        </div>
+
     </div>
-  </header>
-
-  <div class="container">
-    
-    <aside class="sidebar">
-      <div class="sidebar-link active"><span>🏠</span> Home</div>
-      <div class="sidebar-link"><span>🩳</span> Shorts</div>
-      <div class="sidebar-link"><span>📺</span> Subscriptions</div>
-      <hr>
-      <div class="sidebar-link"><span>📚</span> Library</div>
-      <div class="sidebar-link"><span>⏳</span> History</div>
-      <div class="sidebar-link"><span>🎬</span> Your Videos</div>
-    </aside>
-
-    <main class="main-content">
-      <div class="video-grid">
-        
-        <div class="video-card">
-          <div class="thumbnail placeholder-1"></div>
-          <div class="video-info">
-            <div class="channel-profile"></div>
-            <div class="video-details">
-              <p class="video-title">Learn Web Development in 10 Minutes! Fast & Easy</p>
-              <p class="video-author">CodeAcademy</p>
-              <p class="video-stats">1.2M views &bull; 2 days ago</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <div class="thumbnail placeholder-2"></div>
-          <div class="video-info">
-            <div class="channel-profile"></div>
-            <div class="video-details">
-              <p class="video-title">The Ultimate Lo-Fi Beats to Code/Relax To</p>
-              <p class="video-author">ChillVibes</p>
-              <p class="video-stats">500K views &bull; 1 week ago</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <div class="thumbnail placeholder-3"></div>
-          <div class="video-info">
-            <div class="channel-profile"></div>
-            <div class="video-details">
-              <p class="video-title">Delicious 15-Minute Pasta Recipes Anyone Can Make</p>
-              <p class="video-author">Chef Secrets</p>
-              <p class="video-stats">3.4M views &bull; 1 month ago</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <div class="thumbnail placeholder-4"></div>
-          <div class="video-info">
-            <div class="channel-profile"></div>
-            <div class="video-details">
-              <p class="video-title">What Happens If You Step Inside a Black Hole?</p>
-              <p class="video-author">Space Bound</p>
-              <p class="video-stats">890K views &bull; 5 hours ago</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </main>
-
-  </div>
 
 </body>
 </html>
