@@ -107,8 +107,23 @@ hr{
 
 /* ******HERO SECTION******* */
 
-.poster img{
-  width: 100%;
+.slider{
+    width:100%;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.slider marquee{
+    width:100%;
+}
+
+.slider img{
+    width:800px;
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-right:20px;
+}
 }
 
 .set{
