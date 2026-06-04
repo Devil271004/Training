@@ -110,20 +110,53 @@ hr{
 .slider{
     width:100%;
     overflow:hidden;
-    margin-bottom:20px;
 }
 
-.slider marquee{
+.slides{
+    display:flex;
+    width:300%;
+    animation:slide 12s infinite;
+}
+
+.slider{
     width:100%;
+    height:320px;
+    overflow:hidden;
+    position:relative;
 }
 
-.slider img{
-    width:800px;
+.slides{
+    width:300%;
+    height:100%;
+    display:flex;
+    animation:slide 12s infinite;
+}
+
+.slides img{
+    width:33.333%;
     height:320px;
     object-fit:cover;
-    border-radius:10px;
-    margin-right:20px;
+    flex-shrink:0;
 }
+
+@keyframes slide{
+
+    0%,15%{
+        transform:translateX(0);
+    }
+
+    15%,28%{
+        transform:translateX(-33.222%);
+    }
+
+    36%,71%{
+        transform:translateX(-66.333%);
+    }
+
+    90%{
+        transform:translateX(0);
+    }
+
 }
 
 .set{
